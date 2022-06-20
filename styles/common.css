@@ -29,7 +29,7 @@ body {
 	flex-direction: column;
 	background-color: var(--primary-color);
 	line-height: 1.6;
-	color: #545ee3;
+	color: #ffffff;
 	max-width: 100%;
 	overflow-x: hidden;
 }
