@@ -27,9 +27,9 @@ html {
 body {
 	height: 100%;
 	flex-direction: column;
-	background-color: #545ee3;
+	background-color: var(--primary-color);
 	line-height: 1.6;
-	color: #ffffff;
+	color: #545ee3;
 	max-width: 100%;
 	overflow-x: hidden;
 }
