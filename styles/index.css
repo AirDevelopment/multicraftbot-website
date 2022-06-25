@@ -39,7 +39,7 @@ Example
 /* Style the active link (or home/logo) */
 .active {
   background-color: #7289DA;
-  color: white;
+  color: #7289DA;
 }
 
 
