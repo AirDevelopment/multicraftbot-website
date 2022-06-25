@@ -53,6 +53,10 @@ body {
 	background-color: #7289da;
 }
 
+.btn-gray {
+	background-color: #292A2E;
+}
+
 .btn i {
 	top: 3px;
 	font-size: 125%;
