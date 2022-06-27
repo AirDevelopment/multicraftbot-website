@@ -28,9 +28,33 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 </head>
 
-<body style='background-color:#242629;' id='body'>
-    {% extends "default/base.html" %} {% block content %}
-    <div class='container-sm' style='margin-top: 20px; color: #fffffe;'>
+
+<body style='background-color: #292a2e'>
+    <!-- Preloader -->
+
+    <body class='preload'></body>
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="/" class="active">MultiCraft Bot</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="commands">Commands</a>
+    <a href="docs">Information</a>
+    <a href="status">Status</a>
+    <a href="invite">Invite</a>
+    <a href="support">Support</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
         <h1 class='text-center'>What is Dredd?</h1>
         <p class='text-center'><strong>Dredd is a multipurpose Discord bot that is aiming to become one of the best Discord Bots on the whole platform. Dredd was created back in January 2020 and since then it has reached over {{ user_count }} users
                 and
