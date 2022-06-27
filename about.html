@@ -1,163 +1,107 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <meta data-n-head='ssr' charset="utf-8">
-    <meta data-n-head='ssr' name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dredd | About</title>
+    <link rel="icon" href="{{ icon }}">
+    <!-- Discord Stuff -->
+    <meta property="og:title" content="Dredd | About">
+    <meta property="og:description" content="About Dredd. What is Dredd?">
+    <meta property="og:image" itemprop="image" content="{{ icon }}">
+    <meta property="og:locale" content="en_US">
+    <meta name="theme-color" content="{{ color }}">
+    <!-- Style sheets, scripts -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/status.css') }}" type='text/css' media="screen, print">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRMRTNJFRP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- Head Information -->
-    <title>MultiCraft - Staff</title>
-    <link data-n-head='ssr' rel='icon' type='image/x-icon' href='assets/Favicon.ico'>
-
-    <!-- Styles -->
-    <link type='text/css' rel='stylesheet' href='styles/utilities.css'>
-    <link type='text/css' rel='stylesheet' href='styles/common.css'>
-    <link type='text/css' rel='stylesheet' href='styles/commands.css'>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
-
-    <!-- Meta -->
-    <meta name="robots" content="noindex">
-    <meta data-n-head='ssr' data-hid='theme-color' name='theme-color' content='#545ee3'>
-    <meta data-n-head='ssr' data-hid='og:type' name='og:type' content='website'>
-    <meta data-n-head='ssr' data-hid='og:title' name='og:title' content='MultiCraft - Staff'>
-    <meta data-n-head='ssr' data-hid='og:url' name='og:url' content='https://multicraftbot.ml/commands.html'>
-    <meta data-n-head='ssr' data-hid='og:image' name='og:image'
-        content='https://multicraftbot.ml/assets/Favicon.png'>
-    <meta name="description" content='Meet the amazing Development Team who made the MultiCraft Bot. Take also a look at our hard working Moderator Team.'>
-
+      gtag('config', 'G-YRMRTNJFRP');
+    </script>
 </head>
 
-<body style='background-color: #292a2e'>
-    <!-- Preloader -->
-
-    <body class='preload'></body>
-
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="/" class="active">MultiCraft Bot</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="commands">Commands</a>
-    <a href="docs">Information</a>
-    <a href="status">Status</a>
-    <a href="invite">Invite</a>
-    <a href="support">Support</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
-    <!-- FAQ -->
-    <!-- Quick Start -->
-    <section class='quickstart card'>
-        <h2>Quick Start Guide</h2>
-        <div class='container flex'>
-            <ol>
-                <li> <a href='invite.html'><i>Invite MultiCraft to your guild!</i></a>
-                </li>
-                <li>
-                    <div class='flex combine'>
-                        <p>Change the prefix to what you like using</p>
-                        <pre><code>set-prefix</code></pre>
-                        <p></p>
+<body style='background-color:#242629;' id='body'>
+    {% extends "default/base.html" %} {% block content %}
+    <div class='container-sm' style='margin-top: 20px; color: #fffffe;'>
+        <h1 class='text-center'>What is Dredd?</h1>
+        <p class='text-center'><strong>Dredd is a multipurpose Discord bot that is aiming to become one of the best Discord Bots on the whole platform. Dredd was created back in January 2020 and since then it has reached over {{ user_count }} users
+                and
+                {{ guild_count }} servers.</strong></p>
+        <h1 class='text-center' id='admins' style='margin-top: 15px;'>Dredd's Management Team</h1>
+        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
+            <div class='card-body'>
+                <div class="media">
+                    <img class="mr-3" width="64" height="64" src="{{ moksej.avatar.url }}" alt="{{ moksej }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ moksej.status }} 3s infinite !important;"
+                         title="{{ moksej.name }} is {{ 'idle' if moksej.status == discord.Status.idle else 'on do not disturb' if moksej.status == discord.Status.dnd else 'online' if moksej.status == discord.Status.online else 'offline' }}">
+                    <div class="media-body">
+                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ moksej.id }}'>{{ moksej }}</a> <i class="fas fa-crown" title="Dredd's Owner" style='color: #faa626'></i>{% if moksej.id in on_leave %}
+                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
+                        <p>Hey, I'm Moksej! I enjoy listening to music, developing stuff.</p>
                     </div>
-                </li>
-                <li>You're all set to go! Have fun!</li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- About -->
-
-    <section class='devs card'>
-        <h2>Terms of Service</h2>
-        <div class='container flex'>
-<a class='button btn-gray' href='terms'><span>Click here!</span></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Latest -->
-
-    <section class='devs card'>
-        <h2>Privacy Policy</h2>
-        <div class='container flex'>
-<a class='button btn-gray' href='privacy'><span>Click here!</span></a>
+        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
+            <div class='card-body'>
+                <div class="media">
+                    <img class=" mr-3" width="64" height="64" src="{{ zenpa.avatar.url }}" alt="{{ zenpa }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ zenpa.status }} 3s infinite !important;"
+                         title="{{ zenpa.name }} is {{ 'idle' if zenpa.status == discord.Status.idle else 'on do not disturb' if zenpa.status == discord.Status.dnd else 'online' if zenpa.status == discord.Status.online else 'offline' }}">
+                    <div class="media-body">
+                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ zenpa.id }}'>{{ zenpa }}</a> <i class="fas fa-tools" title="Dredd's Admin" style='color: #7289da'></i>{% if zenpa.id in on_leave %}
+                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
+                        Hi, I'm Zenpa. I'm a graphic designer and software developer.
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Developers -->
-    <section class='devs card'>
-        <h2>Server Status</h2>
-        <div class='container flex'>
-            <div class='card'>
-<iframe 
-  src="https://multicraft.instatus.com/embed-status/dark-lg" 
-  width="245" 
-  height="61" 
-  frameBorder="0" 
-  scrolling="no" 
-  style="border: none;"
->
-</iframe>
+        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
+            <div class='card-body'>
+                <div class="media">
+                    <img class="mr-3" width="64" height="64" src="{{ duck.avatar.url }}" alt="{{ duck }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ duck.status }} 3s infinite !important;"
+                         title="{{ duck.name }} is {{ 'idle' if duck.status == discord.Status.idle else 'on do not disturb' if duck.status == discord.Status.dnd else 'online' if duck.status == discord.Status.online else 'offline' }}">
+                    <div class="media-body">
+                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ duck.id }}'>{{ duck }}</a> <i class="fas fa-tools" title="Dredd's Admin" style='color: #7289da'></i>{% if duck.id in on_leave %}
+                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
+                        <p>Hi, I'm DuckMasterAl! I develop discord bots, like <a href="https://quacky.xyz">Quacky Bot</a>, and love Ducks <img style="display: inline; vertical-align: -4.5px; width: 20px; height: 20px;" src="https://duck.elixi.re/i/25gh.png?raw=true"
+                                alt="Duck Emoji" /></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <section class='footer'>
-        <div class='container full grid'>
-            <div class='branding'>
-                <h4>MultiCraft Bot</h4>
-                <p>Copyright &copy; 2022 MultiCraft Bot Development</p>
-            </div>
-            <div class='flex'>
-                <div class='footernav'>
-                    <ul>
-                        <li><a class='button' href='/'><span>Home</span></a></li>
-                        <li><a class='button' href='commands.html'><span>Commands</span></a></li>
-                        <li><a class='button' href='docs.html'><span>Information</span></a></li>
-                    </ul>
-                </div>
-                <div class='footernav'>
-                    <ul>
-                        <li><a class='button' href='status.html'><span>Status</span></a></li>
-                        <li><a class='button' href='support.html'><span>Support</span></a></li>
-                        <li><a class='button' href='invite.html'><span>Invite MultiCraft</span></a></li>
-                    </ul>
+        <h1 class='text-center' id='admins' style='margin-top: 15px;'>Dredd's Staff Team</h1>
+        <div class='row d-flex justify-content-center flex-left'>
+            {% for member in support %}
+            <div class='col-md-6'>
+                <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
+                    <div class='card-body'>
+                        <div class="media">
+                            <img class="mr-3" width="64" height="64" src="{{ member.avatar.url }}" alt="{{ member }}'s avatar"
+                                 style="margin: auto; border-radius: 50%; animation: {{ member.status }} 3s infinite !important;" title="{{ member.name }} is {{ 'idle' if member.status == discord.Status.idle else 'on do not disturb' if member.status == discord.Status.dnd else 'online' if member.status == discord.Status.online else 'offline' }}">
+                            <div class="media-body">
+                                <h5 class="mt-3"><a href='https://discordrep.com/u/{{ member.id }}'>{{ member }}</a> <i class="fas fa-certificate" title="Dredd's Support Member" style='color: #7289da'></i>
+                                    {% if member._roles.has(679642120834777111) %}
+                                    <i class="fa-duotone fa-hammer-crash" title="Dredd's Moderator" style="color:#3dc83b;"></i>{% endif %}
+                                    {% if member.id in on_leave %}
+                                    <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </section>
-
-    <!-- Scripts -->
-    <script>$(window).load(function () { 'body'.removeClass('.preload'); });</script>
-    <script src="https://multicraft.instatus.com/widget/script.js">
-</script>
-<script>function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+    </div> {% endblock %}
 </body>
 
 </html>
