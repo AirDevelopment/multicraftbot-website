@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous">
-       
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 
     <!-- Meta -->
     <meta name="robots" content="noindex">
@@ -58,68 +58,67 @@
 </div>
 
 
- <body style='background-color:#242629;' id='body'>
+    <!-- FAQ -->
+    <!-- Quick Start -->
+    <section class='quickstart card'>
+        <h2>Quick Start Guide</h2>
+        <div class='container flex'>
+            <ol>
+                <li> <a href='invite.html'><i>Invite MultiCraft to your guild!</i></a>
+                </li>
+                <li>
+                    <div class='flex combine'>
+                        <p>Change the prefix to what you like using</p>
+                        <pre><code>set-prefix</code></pre>
+                        <p></p>
+                    </div>
+                </li>
+                <li>You're all set to go! Have fun!</li>
+            </ol>
+        </div>
+    </section>
 
-        <h1 class='text-center'>What is Dredd?</h1>
-        <p class='text-center'><strong>Dredd is a multipurpose Discord bot that is aiming to become one of the best Discord Bots on the whole platform. Dredd was created back in January 2020 and since then it has reached over {{ user_count }} users
-                and
-                {{ guild_count }} servers.</strong></p>
-        <h1 class='text-center' id='admins' style='margin-top: 15px;'>Dredd's Management Team</h1>
-        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
-            <div class='card-body'>
-                <div class="media">
-                    <img class="mr-3" width="64" height="64" src="{{ moksej.avatar.url }}" alt="{{ moksej }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ moksej.status }} 3s infinite !important;"
-                         title="{{ moksej.name }} is {{ 'idle' if moksej.status == discord.Status.idle else 'on do not disturb' if moksej.status == discord.Status.dnd else 'online' if moksej.status == discord.Status.online else 'offline' }}">
-                    <div class="media-body">
-                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ moksej.id }}'>{{ moksej }}</a> <i class="fas fa-crown" title="Dredd's Owner" style='color: #faa626'></i>{% if moksej.id in on_leave %}
-                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
-                        <p>Hey, I'm Moksej! I enjoy listening to music, developing stuff.</p>
-                    </div>
+    <!-- About -->
+
+    <section class='devs card'>
+        <h2>Terms of Service</h2>
+        <div class='container flex'>
+<a class='button btn-gray' href='terms'><span>Click here!</span></a>
                 </div>
             </div>
         </div>
-        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
-            <div class='card-body'>
-                <div class="media">
-                    <img class=" mr-3" width="64" height="64" src="{{ zenpa.avatar.url }}" alt="{{ zenpa }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ zenpa.status }} 3s infinite !important;"
-                         title="{{ zenpa.name }} is {{ 'idle' if zenpa.status == discord.Status.idle else 'on do not disturb' if zenpa.status == discord.Status.dnd else 'online' if zenpa.status == discord.Status.online else 'offline' }}">
-                    <div class="media-body">
-                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ zenpa.id }}'>{{ zenpa }}</a> <i class="fas fa-tools" title="Dredd's Admin" style='color: #7289da'></i>{% if zenpa.id in on_leave %}
-                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
-                        Hi, I'm Zenpa. I'm a graphic designer and software developer.
-                    </div>
+    </section>
+
+    <!-- Latest -->
+
+    <section class='devs card'>
+        <h2>Privacy Policy</h2>
+        <div class='container flex'>
+<a class='button btn-gray' href='privacy'><span>Click here!</span></a>
                 </div>
             </div>
         </div>
-        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
-            <div class='card-body'>
-                <div class="media">
-                    <img class="mr-3" width="64" height="64" src="{{ duck.avatar.url }}" alt="{{ duck }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ duck.status }} 3s infinite !important;"
-                         title="{{ duck.name }} is {{ 'idle' if duck.status == discord.Status.idle else 'on do not disturb' if duck.status == discord.Status.dnd else 'online' if duck.status == discord.Status.online else 'offline' }}">
-                    <div class="media-body">
-                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ duck.id }}'>{{ duck }}</a> <i class="fas fa-tools" title="Dredd's Admin" style='color: #7289da'></i>{% if duck.id in on_leave %}
-                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
-                        <p>Hi, I'm DuckMasterAl! I develop discord bots, like <a href="https://quacky.xyz">Quacky Bot</a>, and love Ducks <img style="display: inline; vertical-align: -4.5px; width: 20px; height: 20px;" src="https://duck.elixi.re/i/25gh.png?raw=true"
-                                alt="Duck Emoji" /></p>
-                    </div>
+    </section>
+
+    <!-- Developers -->
+    <section class='devs card'>
+        <h2>Server Status</h2>
+        <div class='container flex'>
+            <div class='card'>
+<iframe 
+  src="https://multicraft.instatus.com/embed-status/dark-lg" 
+  width="245" 
+  height="61" 
+  frameBorder="0" 
+  scrolling="no" 
+  style="border: none;"
+>
+</iframe>
                 </div>
             </div>
         </div>
-        <h1 class='text-center' id='admins' style='margin-top: 15px;'>Dredd's Staff Team</h1>
-        <div class='row d-flex justify-content-center flex-left'>
-            {% for member in support %}
-            <div class='col-md-6'>
-                <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
-                    <div class='card-body'>
-                        <div class="media">
-                            <img class="mr-3" width="64" height="64" src="{{ member.avatar.url }}" alt="{{ member }}'s avatar"
-                                 style="margin: auto; border-radius: 50%; animation: {{ member.status }} 3s infinite !important;" title="{{ member.name }} is {{ 'idle' if member.status == discord.Status.idle else 'on do not disturb' if member.status == discord.Status.dnd else 'online' if member.status == discord.Status.online else 'offline' }}">
-                            <div class="media-body">
-                                <h5 class="mt-3"><a href='https://discordrep.com/u/{{ member.id }}'>{{ member }}</a> <i class="fas fa-certificate" title="Dredd's Support Member" style='color: #7289da'></i>
-                                    {% if member._roles.has(679642120834777111) %}
-                                    <i class="fa-duotone fa-hammer-crash" title="Dredd's Moderator" style="color:#3dc83b;"></i>{% endif %}
-                                    {% if member.id in on_leave %}
-                                    <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
+    </section>
+
     <!-- Footer -->
     <section class='footer'>
         <div class='container full grid'>
