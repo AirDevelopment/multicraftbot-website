@@ -77,20 +77,6 @@
                 </div>
             </div>
         </div>
-        <div class='card text-white mb-3 border-darker justify-content-center' style='margin-top: 10px; margin-bottom: 10px; background-color: #16161a;'>
-            <div class='card-body'>
-                <div class="media">
-                    <img class="mr-3" width="64" height="64" src="{{ duck.avatar.url }}" alt="{{ duck }}'s avatar" style="margin: auto; border-radius: 50%; animation: {{ duck.status }} 3s infinite !important;"
-                         title="{{ duck.name }} is {{ 'idle' if duck.status == discord.Status.idle else 'on do not disturb' if duck.status == discord.Status.dnd else 'online' if duck.status == discord.Status.online else 'offline' }}">
-                    <div class="media-body">
-                        <h5 class="mt-1"><a href='https://discordrep.com/u/{{ duck.id }}'>{{ duck }}</a> <i class="fas fa-tools" title="Dredd's Admin" style='color: #7289da'></i>{% if duck.id in on_leave %}
-                            <i class="fas fa-sign-out-alt" title='On Leave' style='color: #CC3333;'></i> {% endif %}</h5>
-                        <p>Hi, I'm DuckMasterAl! I develop discord bots, like <a href="https://quacky.xyz">Quacky Bot</a>, and love Ducks <img style="display: inline; vertical-align: -4.5px; width: 20px; height: 20px;" src="https://duck.elixi.re/i/25gh.png?raw=true"
-                                alt="Duck Emoji" /></p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <h1 class='text-center' id='admins' style='margin-top: 15px;'>Moderation Team</h1>
         <div class='row d-flex justify-content-center flex-left'>
 
@@ -115,7 +101,7 @@
         </div>
     </div>
 
-<!-- Footer -->
+<!-- Footer --> 
     <section class='footer'>
         <div class='container full grid'>
             <div class='branding'>
