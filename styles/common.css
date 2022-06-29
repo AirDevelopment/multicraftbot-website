@@ -226,51 +226,28 @@ section {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
-}
+ @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
+ body {
+     font-family: 'Muli', sans-serif;
+     height: 100% !important;
+     background-color: #fff !important;
+     padding: 0 !important;
+     margin: 0 !important
+ }
 
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
+ .container-fluid {
+     margin-top: 101px;
+     color: #000 !important
+ }
 
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-  .footer-distributed{
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
-
-}
+ .card {
+     color: #757575 !important;
+     background-color: #fff !important;
+     align-items: center !important;
+     background: url('https://i.imgur.com/9djv5sH.jpg');
+     background-size: contain;
+     background-repeat: no-repeat;
 
 
 
