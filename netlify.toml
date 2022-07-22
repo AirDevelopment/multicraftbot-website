@@ -3,3 +3,9 @@
   to = "/contributors"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/docs"
+  to = "/"
+  status = 301
+  force = true
