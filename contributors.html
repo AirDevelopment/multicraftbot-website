@@ -73,7 +73,25 @@
                     <div class="media-body">
                         <h5 class="mt-1"><a href='https://www.youtube.com/channel/UC3-viqsvh3nIJHIlQAhESdg'>Melvin0776</a> <i class="fas fa-tools" title="Developer" style='color: #7289da'></i> 
                             <i class="fa-solid fa-badge-check" title="Flex Badge" style='color: #E51E26'></i> </h5>
-                        Hi, I'm Melvin0776, Main Developer of the MultiCraft Bot.</p>
+                        Hi, I'm Melvin0776, Main Developer of the MultiCraft Bot.</p><div id="divIdToBeTouched" onmouseover="theFunctionToBeCalled()" onClick="theFunctionToBeCalled()"><li><a class='button'><span>Read More</span></a></li></div>
+  <script>
+var i = 0;
+function theFunctionToBeCalled(){
+  i++;
+  if(i == 2) {
+    //do what you wanted once the onClick event was fired
+    alert("i == 2");
+    //now make sure to reset the flag that was made so it will work     next time
+    i = 0;
+  }
+  else {
+    //change the content
+    alert("i == 1");
+  }
+    //do something interesting here if you want to
+}
+
+</script>
                     </div>
                 </div>
             </div>
