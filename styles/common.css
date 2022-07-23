@@ -1,3 +1,7 @@
+.el { user-select: none; }
+
+
+
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
