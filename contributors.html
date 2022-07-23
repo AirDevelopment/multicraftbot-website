@@ -147,7 +147,7 @@
 }
 </script>
 
-preventLongPressMenu(document.getElementsByTagName('img'));
+<script>preventLongPressMenu(document.getElementsByTagName('img'));
 
 function preventLongPressMenu(nodes) {
   for(var i=0; i<nodes.length; i++){
@@ -157,6 +157,7 @@ function preventLongPressMenu(nodes) {
      nodes[i].ontouchcancel = absorbEvent_;
   }
 }
+</script>
 
 </body>
 
