@@ -148,16 +148,24 @@
 </script>
 
 <script>
+function init() {
+  onLongPress(document.getElementById('img'));
+}
 
-preventLongPressMenu(document.getElementsByTagName('img'));
+function onLongPress(node) {
+  node.ontouchstart = nullEvent;
+  node.ontouchend = nullEvent;
+  node.ontouchcancel = nullEvent;
+  node.ontouchmove = nullEvent;
+}
 
-function preventLongPressMenu(nodes) {
-  for(var i=0; i<nodes.length; i++){
-     nodes[i].ontouchstart = absorbEvent_;
-     nodes[i].ontouchmove = absorbEvent_;
-     nodes[i].ontouchend = absorbEvent_;
-     nodes[i].ontouchcancel = absorbEvent_;
-  }
+function nullEvent(event) {
+  var e = event || window.event;
+  e.preventDefault && e.preventDefault();
+  e.stopPropagation && e.stopPropagation();
+  e.cancelBubble = true;
+  e.returnValue = false;
+  return false;
 }
 </script>
 
