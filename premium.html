@@ -36,7 +36,7 @@
 
     <body class='preload'></body>
 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Top Navigation Menu -->
@@ -145,6 +145,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Scripts -->
+    <script>$(window).load(function () { 'body'.removeClass('.preload'); });</script>
+    <script src="https://multicraft.instatus.com/widget/script.js">
+</script>
+<script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 
 </html>
