@@ -15,3 +15,9 @@
   to = "https://ko-fi.com/multicraftbot/tiers"
   status = 302
   force = true
+  
+  [[redirects]]
+  from = "/support"
+  to = "ttps://dsc.gg/multicraft-support"
+  status = 302
+  force = true
