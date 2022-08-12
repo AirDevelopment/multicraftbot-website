@@ -16,7 +16,7 @@
   status = 302
   force = true
   
-  [[redirects]]
+[[redirects]]
   from = "/support"
   to = "ttps://dsc.gg/multicraft-support"
   status = 302
