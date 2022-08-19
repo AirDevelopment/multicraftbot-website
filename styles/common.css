@@ -125,6 +125,15 @@ body {
 	color: #ffffff;
 }
 
+#header {
+  position: fixed;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+
 /* Footer */
 .footer {
 	width: 100%;
