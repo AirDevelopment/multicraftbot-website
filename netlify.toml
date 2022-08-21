@@ -12,6 +12,6 @@
 
 [[redirects]]
   from = "/premium"
-  to = "https://ko-fi.com"
+  to = "https://ko-fi.com/multicraftbot/tiers"
   status = 302
   force = true
