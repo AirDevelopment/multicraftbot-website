@@ -9,3 +9,9 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/premium"
+  to = "https://ko-fi.com"
+  status = 302
+  force = true
