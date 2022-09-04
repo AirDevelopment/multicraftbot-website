@@ -9,3 +9,11 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "https://blog.multicraftbot.xyz"
+  status = 301
+  force = true
+
+
