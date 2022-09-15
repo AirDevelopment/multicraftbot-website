@@ -16,4 +16,10 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/donate"
+  to = "https://ko-fi.com/multicraftbot/donate"
+  status = 301
+  force = true
+
 
