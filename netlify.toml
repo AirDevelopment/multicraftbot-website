@@ -11,12 +11,6 @@
   force = true
 
 [[redirects]]
-  from = "/blog"
-  to = "https://blog.multicraftbot.xyz"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/donate"
   to = "https://ko-fi.com/multicraftbot/donate"
   status = 301
