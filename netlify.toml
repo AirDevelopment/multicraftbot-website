@@ -12,7 +12,7 @@
 
 [[redirects]]
   from = "/donate"
-  to = "https://ko-fi.com/airdevtech/donate"
+  to = "https://ko-fi.com/airdevelopment/donate"
   status = 301
   force = true
 
